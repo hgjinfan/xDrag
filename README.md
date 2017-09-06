@@ -1,2 +1,2 @@
 # xDrag
-原生js拖拽插件
+xDrag is a Native JavaScript plugin to enable dragging and dropping as well as on a grid. 
