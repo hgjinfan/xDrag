@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../src/xDrag.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+
+    .wrapper {
+      margin: 100px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box:nth-child(n) {
+      background: #2db7f5;
+    }
+
+    .box:nth-child(2n+1) {
+      background: #00c261;
+    }
+
+    .box:nth-child(3n) {
+      background: #1a321a;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper" id="ceshi">
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+    <li class="box"></li>
+  </div>
+  <script>
+    var option = {
+      id: 'ceshi',
+      dragClassName: 'box',
+      rowMax: 4,
+      gridGap: 20
+    }
+    xDrag(option)
+  </script>
+</body>
+</html>
