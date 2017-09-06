@@ -66,6 +66,7 @@
 
     function mouseUp (event) {
       containerDom.removeEventListener('mousemove', mouseMove, false)
+      if(!dragged) {return}
       dragged.classList.remove('dragging')
       let endTop =  parseInt(index/rowMax) * (100 + gridGap),
           endLeft = index % rowMax * (100 + gridGap)
