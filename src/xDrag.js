@@ -68,8 +68,8 @@
       containerDom.removeEventListener('mousemove', mouseMove, false)
       if(!dragged) {return}
       dragged.classList.remove('dragging')
-      let endTop =  parseInt(index/rowMax) * (100 + gridGap),
-          endLeft = index % rowMax * (100 + gridGap)
+      let endTop =  parseInt(index/rowMax) * (height + gridGap),
+          endLeft = index % rowMax * (width + gridGap)
       dragged.style.cssText = 'top:'+ endTop + unit + ';left:'+ endLeft + unit + ';'
       move = false
     }
