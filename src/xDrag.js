@@ -96,7 +96,7 @@
         array.splice(idx,0,curr)
         index = idx
       }
-      if (top < - (100 + gridGap)) { // 若移动到顶部优先放到首位
+      if (top < - (height + gridGap)) { // 若移动到顶部优先放到首位
         array.unshift(array[index])
         index = index + 1
         array.splice(index, 1)
