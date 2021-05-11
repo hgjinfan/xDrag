@@ -4,7 +4,7 @@ xDrag is a Native JavaScript plugin to enable dragging and dropping as well as o
 ## Installation
 To install copy the javascripts directories into your project and add the following snippet to the header:
 <code><script src="src/xDrag.js"></script></code>
-
+[preview](http://hgjinfan.github.io/xDrag/example/)
 ## Examples
     <style>
       .box {
